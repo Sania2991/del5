@@ -1,0 +1,137 @@
+// Интернет-магазин модной обуви Edison Shoes. Главная страница
+body.page
+  header.page__header.page-header
+    nav.page-header__navigation.main-navigation
+      a.logo
+        svg.logo__img   
+
+      ul.site-navigation
+        li.site-navigation__item
+          a.site-navigation__link.site-navigation__link--active   // Обувь
+        li.site-navigation__item
+          a.site-navigation__link   // Новинки        
+        
+      ul.user-navigation
+        li.user-navigation__item.user-navigation-item
+          a.user-navigation-item__link
+            svg.user-navigation-item__img
+            span.user-navigation-item__caption    // Войти
+        li.user-navigation__item.user-navigation-item
+          a.user-navigation-item__link
+            svg.user-navigation-item__img
+            span.user-navigation-item__caption
+            span.user-navigation-item__caption    // Избранное
+
+
+  main.page__content
+    h1.visually-hidden    // Магазин обуви бренда Edison
+    section.promo
+      div.promo__content.banner
+        div.banner__content
+          h2.banner__title    // Большая br>распродажа!
+          img.banner__cover
+          p.banner__description   // Скидки до 70% на коллекцию демисезонной обуви
+          a.banner__button.button.button--primary.button--size-xl   // Смотреть каталог
+        
+    section.catalog
+      header.catalog__headline.headline
+        h2.headline__title    // Новая коллекция
+        a.headline__link.link   // Смотреть все
+      div.catalog__content
+        article.catalog-card
+          h3.catalog-card__title    // Туфли Shein
+          img.catalog-card__image
+          p.catalog-card__price   // 17 500 ₽
+          a.button.button--secondary    // Подробнее
+          a.button.button--primary    // В корзину
+        
+    section.blog
+      header.blog__headline.headline
+        h2.headline__title    // Блог
+        a.headline__link.link   // Все статьи
+      div.blog__content
+        article.blog-card
+          h3.blog-card__title   // Как ухаживать за кожаной обувьюи
+          img.blog-card__image
+          p.blog-card__description    // Обувь из натуральной кожи практичная,
+          a.button.button--primary    // Читать статью
+        
+    section.reviews
+      header.reviews__headline.headline
+        h2.headline__title    // Отзывы
+        a.headline__link.link   // Все отзывы
+      div.reviews__content
+        blockquote.review
+          div.review__headline
+            div.review__author.avatar
+              img.avatar__img
+              cite.review__name.avatar__name    // Ольга
+            time.review__time   // 28.06.2021
+          p.review__message   // Очень любим магазин Edison,
+      
+
+  footer.page-footer
+    div.page-footer__row
+      div.page-footer__column
+        a.page-footer__logo.logo
+
+        ul.page-footer__contacts.contacts
+          li.contacts__list-item
+            a.contacts__item.contacts__item--phone    // 8 (800) 999 55 22
+          li.contacts__list-item
+            address.contacts__item.contacts__item--map    // Санкт-Петербург, ул. Набережная, д. 40
+      
+      div.page-footer__column
+        div.page-footer__navigation.service-navigation
+          div.service-navigation__column
+            p.service-navigation__category    // Каталог
+            ul.service-navigation__list
+              li.service-navigation__item
+                a.service-navigation__link    // Новинки
+              li.service-navigation__item
+                a.service-navigation__link    // Женщинам
+            
+          div.service-navigation__column
+            p.service-navigation__category    // Компания
+            ul .service-navigation__list
+              li.service-navigation__item
+                a.service-navigation__link    // О нас
+              li.service-navigation__item
+                a.service-navigation__link    // Блог
+              
+      
+      div.page-footer__column
+        form.page-footer__subscribe.subscribe
+          label.subscribe__decription   // Подпишитесь на нашу рассылку и
+          input.subscribe__email
+
+        div.page-footer__payment.payment
+          p.payment__category   // Способы оплаты:
+          ul.payment__list
+            li.payment__item
+              img  
+            li.payment__item
+              img
+      
+    
+    div.page-footer__row
+      ul.page-footer__social.social
+        li.social__item
+          a.social__link
+            svg
+        li.social__item
+          a.social__link
+            svg
+        
+      
+    
+    div.page-footer__row
+      div.page-footer__column
+        a.page-footer__link   // Политика обработки персональных данных
+      div.page-footer__column
+        a.page-footer__link   // Публичная оферта
+      
+    
+  
+
+
