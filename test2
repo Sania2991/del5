@@ -1,0 +1,203 @@
+!-- Карточка товара -->
+body.page
+header.page__header.page-header
+  nav.page-header__navigation.main-navigation
+
+    a.logo
+      img
+
+    ul.site-navigation
+      li.site-navigation__item
+        a.site-navigation__link.site-navigation__link--active   // Электроника
+      li.site-navigation__item
+        a.site-navigation__link   // Бытовая техника
+      li.site-navigation__item
+        a.site-navigation__link.site-navigation__link--accent   // Акции
+      
+    ul.user-navigation
+      li.user-navigation__item.user-navigation-item
+        a.user-navigation-item__link.profile-link
+          svg.user-navigation-item__img
+          span.profile-link__caption    // Валерия
+      li.user-navigation__item.user-navigation-item
+        a.user-navigation-item__link.notification-badge
+          svg.user-navigation-item__img
+          span.user-navigation-item__caption.notification-badge__counter    // 3
+          span.user-navigation-item__caption    // Сравнение
+
+
+main.page__content
+  ul.breadcrumbs
+    li.breadcrumbs__item
+      a.breadcrumbs__link   // Главная
+    li.breadcrumbs__item
+      a.breadcrumbs__link   // Электроника
+    li.breadcrumbs__item
+      a.breadcrumbs__link.breadcrumbs__link--active   // Моноблок Apple
+    
+  article.product-card.card
+    div.product-card__summary.card__summary-panel
+      h1.product-card__title    // Моноблок Apple iMac 24 M1/8/256 Purple (MGPM3RU/A)
+      p.product-card__code    // Артикул 100 CD8 773 EF0
+      div.product-card__rating.rating
+        svg.rating__star.rating__star--active
+        svg.rating__star.rating__star--active
+        span.rating__value    // 5
+      
+      a.product-card__reviews   // 24 отзыва
+      p.product-card__price   // 149 000 ₽
+      a.product-card__hire-purchase-terms.link    // В рассрочку от 7 000 в месяц
+      div.product-card__controls
+        button.product-card__button.button    // В корзину
+        a.product-card__button.image-button.image-button--active
+          span.visually-hidden    // Добавить в избранное
+          svg.image-button__img
+        
+        a.product-card__button.image-button
+          span.visually-hidden    // Добавить в сравнение
+          svg.image-button__img
+        
+      ul.product-card__sale-terms
+        li.product-card__sale-term.product-card__sale-term--delivery    // Бесплатная доставка в Омск – 30 августа
+        li.product-card__sale-term.product-card__sale-term--self-delivery   // Самовывоз – с 23 августа из a.product-card__link  // 3 магазинов
+        li.product-card__sale-term.product-card__sale-term--warranty    // Расширенная гарантия AppleCare
+      
+    div.product-card__img.card__img-panel
+      div.slider
+        div.slider__viewport
+          img.slider__img src
+        
+        button.slider__button-prev.slider-button
+          span.visually-hidden    // Назад
+          svg.slider-button__img
+        
+        ul.slider__previews.preview-photos
+          li.preview-photos__item
+            img.preview-photos__img
+          li.preview-photos-item
+            img.preview-photos__img
+          li.preview-photos__item
+            img.preview-photos__img
+        
+        button.slider__button-next.slider-button.slider-button--disabled
+          span.visually-hidden    // Вперёд
+          svg.slider-button__img
+    
+    div.product-card__features.card__features-panel.tabs.tabs--contrast
+      ul.tabs__navigation
+        li.tabs__navigation-item
+          a.tabs__navigation-link.tabs__navigation-link--active [href:"#page-1"]    // Характеристики
+        li.tabs__navigation-item
+          a.tabs__navigation-link [href:"#page-2"]    // Отзывы
+        li.tabs__navigation-item
+          a.tabs__navigation-link [href:"#page-3"]    // Наличие в магазинах
+        
+      div.tabs__pages
+        div.tabs__pages-item.tabs__pages-item--active#page-1
+          section.product-params
+            div.product-params__group
+              h3.product-params__group-title    // Заводские данные о товаре
+              dl.product-params__list
+                div.product-params__item
+                  dt.product-params__item-name    // Модель
+                  dd.product-params__item-value   // iMac 24 2021
+                div.product-params__item
+                  dt.product-params__item-name    // Бренд
+                  dd.product-params__item-value   // Apple
+        
+
+        div.tabs__pages-item#page-2
+          div.reviews
+            div.review.review--accent
+              div.review__headline
+                a.review__profile-link    // Евгения
+                div.review__rate.rating.rating--size-medium [aria-label:"Рейтинг 5 из 5"]
+                  svg.rating__star.rating__star--active
+                  svg.rating__star.rating__star--active
+                  span.rating__value    // 5
+                time.review__date   // 20.07.2021
+              
+              p.review__category    // Достоинства
+              pre.review__response    // Невероятно легкий и тонкий
+              p.review__category    // Недостатки
+              pre.review__response    // Кого-то может смутить небольшое
+              p.review__category    // Комментарий
+              pre.review__response    // Я очень ждала выхода новой модели
+            
+            a.reviews__link.link    // Смотреть еще
+          
+
+        div.tabs__pages-item id=page-3
+          table.product-card__shop-offers.table.shop-offers
+            colgroup>
+              col.shop-offers__column-1
+              col.shop-offers__column-2
+              col.shop-offers__column-3
+
+            tr.table__row
+              th.table__cell.table__cell--head    // Адрес
+              th.table__head.table__cell--head    // Наличие
+              th.table__head.table__cell--head    // Режим работы
+            
+            tr.table__row
+              td.table__cell
+                a.shop-offers__link
+                  b.shop-offers__accent   // ТЦ «Омский» // Омск, ул. Ленина, 14
+              td.table__cell    // В наличии
+              td.table__cell    // 10:00 - 21:00
+      
+
+
+  section.products-short-list-section
+    h2.products-short-list-section__title   // Вы недавно смотрели
+    ul.products-short-list-section__list.catalog
+      li.catalog__item
+
+        section.product-preview.product-preview--short
+          h3.product-preview__title
+            a.product-preview__link   // Смарт-часы Apple Watch Series 5 38mm (MTEY2RU/A)
+          img.product-preview__img
+          p.product-preview__price    // 34 000 ₽
+          div.product-preview__controls
+            button.product-preview__button.button   // В корзину
+            a.product-preview__button.image-button
+              span.visually-hidden    // Добавить в избранное
+              svg.image-button__img
+            a.product-preview__button.image-button.image-button--active
+              span.visually-hidden    // Добавить в сравнение
+              svg.image-button__img
+    
+
+footer.page__footer.page-footer
+  div.page-footer__navigation.service-navigation
+
+    div.service-navigation__column
+      p.service-navigation__category    // О компании
+      ul.service-navigation__list
+        li.service-navigation__item
+          a.service-navigation__link    // О нас
+        li.service-navigation__item
+          a.service-navigation__link    // Контакты
+    
+    div.service-navigation__column
+      p.service-navigation__category    // Покупателям
+      ul .service-navigation__list
+        li.service-navigation__item
+          a.service-navigation__link    // Служба поддержки        
+    
+  div.page-footer__payment.payment
+    p.payment__category   // Способы оплаты:
+    ul.payment__list
+      li.payment__item
+        img
+      li.payment__item
+        img
+  
+  div.page-footer__social.social
+    p.social__category    // Мы в соцсетях
+    ul.social__list
+      li.social__item
+        a.social__link
+          img
+      
+  p.page-footer__copyright    // OOO «Маркет» © 2021 Все права защищены
